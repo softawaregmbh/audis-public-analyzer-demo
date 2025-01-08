@@ -1,0 +1,84 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.6",
+  "speak": "<s>The forecast for Seattle ${formatEpoch(dt, 'MMMM d')} is mostly clear with a High of ${formatNumber((main.temp_max - 273) * 9 / 5 + 32, 0)} degrees and Low of ${formatNumber((main.temp_min - 273) * 9 / 5 + 32, 0)} degrees</s>",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "${name}, ${code}",
+      "size": "large",
+      "isSubtle": true,
+      "wrap": true,
+      "style": "heading"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Di., 20. Jänner 2024 09:00",
+      "spacing": "none",
+      "wrap": true
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://audisstorage.blob.core.windows.net/public/weather.png",
+              "size": "small",
+              "altText": "Vereinzelte Wolke"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "10",
+              "size": "extraLarge",
+              "spacing": "none",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "°C",
+              "weight": "bolder",
+              "spacing": "small",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Max 12 °C",
+              "horizontalAlignment": "left",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Min 8 °C",
+              "horizontalAlignment": "left",
+              "spacing": "none",
+              "wrap": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
