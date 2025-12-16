@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="AdaptiveCards" Version="3.1.0" />
-    <PackageReference Include="AdaptiveCards.Templating" Version="1.5.0" />
-    <PackageReference Include="Audis.Analyzer.Common" Version="6.1.0" />
-    <PackageReference Include="Audis.Primitives" Version="3.0.0" />
+    <PackageReference Include="AdaptiveCards.Templating" Version="2.0.5" />
+    <PackageReference Include="Audis.Analyzer.Common" Version="7.0.0" />
+    <PackageReference Include="Audis.Primitives" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />

@@ -1,0 +1,60 @@
+
+@tenantId = softaware
+
+POST https://localhost:7199/api/presentation/analyzer/{{tenantId}}/weather
+Content-Type: application/json
+
+{
+    "interrogationId": "03a803a5-533b-4302-a7f5-e9fa1c78434e",
+    "interrogationProcessStepId": 1,
+    "knowledge": [
+      {
+        "knowledgeIdentifier": "#wetter",
+        "values": [
+          {
+            "knowledgeValue": "ja"
+          }
+        ],
+        "origin": 1,
+        "lastUpdated": "2019-07-16T08:09:52.3011251Z"
+      },
+        {
+            "knowledgeIdentifier": "#audis.standort.lat",
+            "values": [
+                {
+                    "knowledgeValue": "48.21941"
+                }
+            ],
+            "origin": 1,
+            "lastUpdated": "2019-07-16T08:09:52.3011251Z"
+        },
+        {
+            "knowledgeIdentifier": "#audis.standort.lng",
+            "values": [
+                {
+                    "knowledgeValue": "14.41784"
+                }
+            ],
+            "origin": 1,
+            "lastUpdated": "2019-07-16T08:09:55.3850454Z"
+        },
+        {
+            "knowledgeIdentifier": "#abcde.atmung",
+            "values": [
+                {
+                    "knowledgeValue": "ja",
+                    "answerId": "abcde:10/11"
+                }
+            ]
+        },
+        {
+            "knowledgeIdentifier": "#abcde.bewusstsein",
+            "values": [
+                {
+                    "knowledgeValue": "ja",
+                    "answerId": "abcde:14/15"
+                }
+            ]
+        }
+    ]
+}

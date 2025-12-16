@@ -32,13 +32,13 @@
   "sys": {
     "type": 1,
     "id": 5798,
-    "country": "CHE",
+    "country": "AT",
     "sunrise": 1572879421,
     "sunset": 1572914822
   },
   "timezone": -28800,
   "id": 5808079,
-  "name": "Z&uuml;rich",
-  "code":  "CHE",
+  "name": "Asten",
+  "code":  "AT",
   "cod": 200
 }

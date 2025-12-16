@@ -60,10 +60,10 @@ namespace Presentation.Services
                     InterrogationId = analyzerRequestDto.InterrogationId,
                     InterrogationProcessStepId = analyzerRequestDto.InterrogationProcessStepId,
                     RemoveWithNextProcessStep = false,
-                    Title = "Wetter - Zürich",
+                    Title = "Wetter - Asten",
                     Timestamp = DateTime.UtcNow,
                     AdaptiveCardJson = adaptiveCard,
-                    SuggestedKnowledges = new List<SuggestedKnowledgeDto>
+                    SuggestedKnowledge = new List<SuggestedKnowledgeDto>
                         {
                             new()
                             {
